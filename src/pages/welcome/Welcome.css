@@ -1,0 +1,88 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.welcome-container {
+  position: relative;
+}
+
+.welcome-body {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#kiot-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(42vw, 720px);
+  height: auto;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.welcome-content #line1 {
+  margin-top: 150px;
+  font-size: 65px;
+  color: #20409a;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.welcome-content #line2 {
+  font-size: 80px;
+  color: #f9b043;
+  margin-top: 0;
+  margin-bottom: 80px;
+  line-height: 1;
+}
+
+.welcome-button #stu,
+.welcome-button #sta {
+  background-color: #20409a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.welcome-button #stu:hover,
+.welcome-button #sta:hover {
+  color: #f9b043;
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .welcome-content #line1 {
+    font-size: 48px;
+  }
+
+  .welcome-content #line2 {
+    font-size: 64px;
+  }
+
+  .welcome-button #stu,
+  .welcome-button #sta {
+    font-size: 24px;
+    padding: 14px 28px;
+  }
+}
