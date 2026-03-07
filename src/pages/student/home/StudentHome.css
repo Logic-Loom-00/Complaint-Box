@@ -1,0 +1,28 @@
+.student-home-page {
+  min-height: 100vh;
+}
+
+.home-content {
+  min-height: calc(100vh - 72px);
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(3, 190px);
+  justify-content: center;
+  gap: 24px;
+}
+
+.dept-name {
+  margin-top: -100px;
+  margin-left: 10px;
+  font-size: 70px;
+  color: #20409a;
+  text-align: center;
+}
