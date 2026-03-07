@@ -1,7 +1,7 @@
 export const sectors = [
-  { id: "hostel", name: "Hostel" },
-  { id: "canteen", name: "Canteen" },
-  { id: "infrastructure", name: "Infrastructure" },
+  { id: "canteen", name: "KIOT Food Court" },
+  { id: "infrastructure", name: "Infrastructure & Management" },
   { id: "sports", name: "Sports" },
+  { id: "hostel", name: "Hostel" },
   { id: "others", name: "Others" }
 ];
